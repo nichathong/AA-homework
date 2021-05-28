@@ -19,5 +19,23 @@ class Stack
     def peek
       return @stack.pop
     end
-  end
+end
+
+class Queue
+    
+    def initialize
+        @array = []
+    end
+
+    def enqueue(ele)
+
+    end
+
+
+    def dequeue
+    end
+
+    def peek
+    end
+end
 
