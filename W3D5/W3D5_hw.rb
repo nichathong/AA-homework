@@ -43,3 +43,15 @@ class Queue
     attr_reader :array
 end
 
+class Map
+    def initialize(hash)
+        @map_array = Array.new { Array.new([])}
+        
+        hash.each { |k, v| @map_array << [k,v] }
+    end
+
+
+
+end
+
+
