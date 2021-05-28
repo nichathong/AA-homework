@@ -28,7 +28,7 @@ class Queue
     end
 
     def enqueue(ele)
-
+        
     end
 
 
@@ -37,5 +37,7 @@ class Queue
 
     def peek
     end
+
+    attr_reader :array
 end
 
