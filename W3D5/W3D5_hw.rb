@@ -28,14 +28,16 @@ class Queue
     end
 
     def enqueue(ele)
-        
+        @array << ele
     end
 
 
     def dequeue
+        @array.pop(ele)
     end
 
     def peek
+        @array.each { |ele| p ele }
     end
 
     attr_reader :array
