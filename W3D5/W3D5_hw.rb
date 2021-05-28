@@ -1,18 +1,23 @@
 class Stack
     def initialize
-      @stack = Array.new(n) { Array.new(n)}
+      @stack = []
     end
 
-    def push(el)
-      # adds an element to the stack
+    def stack
+        @stack
+    end
+
+    def push(num)
+        @stack.push(num)  
     end
 
     def pop
-      # removes one element from the stack
+        @stack.pop(num)
+      
     end
 
     def peek
-      # returns, but doesn't remove, the top element in the stack
+      return @stack.pop
     end
   end
 
