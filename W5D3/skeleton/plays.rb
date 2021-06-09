@@ -95,7 +95,7 @@ class Play
 
     end
 
-    def new(options)
+    def initialize(options)
       @id = options['id']
       @name = options['name']
       @birth_year = options['birth_year']
@@ -106,7 +106,7 @@ class Play
       raise "#{self} is already in database" unless self.id
       PlayDBConnection.instance.execute(<<-SQL, self.name, self.birth_year)
         INSERT INTO 
-        Playwright (id, name, birth_year)
+        Playwright (name, birth_year)
         VALUES
         (?, ?)
       SQL
