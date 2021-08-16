@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 5000;
+const db = require('./config/keys').mongoURI;
 const mongoose = require('mongoose');
-const db = require('./config/key').mongoURI;
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
+
 
 mongoose
 .connect(db, { useNewUrlParser: true })
